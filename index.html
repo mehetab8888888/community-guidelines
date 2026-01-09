@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Community Guidelines - YAPPZY SOCIAL MEDIA">
+    <title>Community Guidelines • YAPPZY SOCIAL MEDIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #262626;
+            background: #fafafa;
+        }
+
+        a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #dbdbdb;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 935px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #262626;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links a {
+            color: #262626;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 24px;
+        }
+
+        main {
+            max-width: 935px;
+            margin: 0 auto;
+            padding: 30px 20px 60px;
+        }
+
+        .page-title {
+            font-size: 24px;
+            font-weight: 400;
+            color: #262626;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 12px;
+            color: #8e8e8e;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            background: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+
+        .section-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid #efefef;
+        }
+
+        .section-header h2 {
+            font-size: 16px;
+            font-weight: 500;
+            color: #262626;
+        }
+
+        .section-content {
+            padding: 20px;
+        }
+
+        .section-content p {
+            margin-bottom: 16px;
+            color: #262626;
+        }
+
+        .section-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-content h3 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #262626;
+            margin: 20px 0 12px 0;
+        }
+
+        .section-content h3:first-child {
+            margin-top: 0;
+        }
+
+        .section-content ul {
+            margin: 0 0 16px 20px;
+            color: #262626;
+        }
+
+        .section-content li {
+            margin-bottom: 8px;
+        }
+
+        .info-box {
+            background: #eff6ff;
+            border-left: 3px solid #0095f6;
+            padding: 12px 16px;
+            margin: 16px 0;
+            font-size: 13px;
+            color: #1e40af;
+        }
+
+        .warning-box {
+            background: #fef2f2;
+            border-left: 3px solid #ef4444;
+            padding: 12px 16px;
+            margin: 16px 0;
+            font-size: 13px;
+            color: #991b1b;
+        }
+
+        .contact-box {
+            background: #ffffff;
+            color: #262626;
+            border-radius: 10px;
+            border: 1px solid #dbdbdb;
+            padding: 24px 20px;
+            margin-top: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .contact-box h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            position: relative;
+            color: #262626;
+        }
+
+        .contact-box .subtitle {
+            font-size: 12px;
+            color: #8e8e8e;
+            margin-bottom: 18px;
+            position: relative;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 10px;
+            position: relative;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 14px;
+            background: #fafafa;
+            border-radius: 8px;
+            border: 1px solid #efefef;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: #f5f5f5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-color: #dbdbdb;
+        }
+
+        .contact-icon {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            opacity: 0.9;
+        }
+
+        .contact-content {
+            flex: 1;
+        }
+
+        .contact-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #8e8e8e;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .contact-box p {
+            color: #262626;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .contact-box a {
+            color: #0095f6;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .contact-box a:hover {
+            border-bottom-color: #0095f6;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .contact-box {
+                padding: 24px 20px;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer {
+            background: #fff;
+            border-top: 1px solid #dbdbdb;
+            padding: 24px 20px;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #8e8e8e;
+            font-size: 12px;
+            margin: 0 12px;
+        }
+
+        .footer-links a:hover {
+            color: #262626;
+        }
+
+        .copyright {
+            color: #8e8e8e;
+            font-size: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .nav-links a {
+                margin: 0 12px;
+            }
+
+            .page-title {
+                font-size: 20px;
+            }
+
+            .section-content {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">YAPPZY SOCIAL MEDIA</div>
+            <nav class="nav-links">
+                <a href="../terms-of-service/index.html">Terms</a>
+                <a href="../privacy-policy/index.html">Privacy</a>
+                <a href="index.html">Guidelines</a>
+                <a href="../help/index.html">Help</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="page-title">Community Guidelines</h1>
+        <p class="last-updated">Last updated: January 8, 2026</p>
+
+        <!-- Introduction -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Our Mission</h2>
+            </div>
+            <div class="section-content">
+                <p>YAPPZY is a platform for creativity, expression, and connection. We're committed to building a safe,
+                    inclusive, and positive community where everyone feels welcome.</p>
+                <p>These Community Guidelines help us maintain a healthy environment for all users. By using YAPPZY, you
+                    agree to follow these guidelines.</p>
+                <div class="warning-box">
+                    <strong>Violations may result in content removal, account suspension, or permanent ban.</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Safety -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Safety First</h2>
+            </div>
+            <div class="section-content">
+                <h3>Protecting Minors</h3>
+                <p>We have zero tolerance for content that sexualizes, exploits, or endangers minors. This includes:</p>
+                <ul>
+                    <li>Nudity or sexualized content involving anyone under 18</li>
+                    <li>Grooming or predatory behavior</li>
+                    <li>Child endangerment or abuse</li>
+                </ul>
+
+                <h3>Violence & Threats</h3>
+                <p>We do not allow content that promotes, glorifies, or incites violence. This includes:</p>
+                <ul>
+                    <li>Graphic violence or gore</li>
+                    <li>Threats of violence against individuals or groups</li>
+                    <li>Promotion of terrorism or violent extremism</li>
+                    <li>Instructions for making weapons or explosives</li>
+                </ul>
+
+                <h3>Self-Harm & Suicide</h3>
+                <p>Content that promotes self-harm, suicide, or eating disorders is prohibited. If you're struggling,
+                    please reach out for help.</p>
+            </div>
+        </div>
+
+        <!-- Respect -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Respect & Kindness</h2>
+            </div>
+            <div class="section-content">
+                <h3>No Hate Speech</h3>
+                <p>We do not tolerate hate speech or discrimination based on:</p>
+                <ul>
+                    <li>Race, ethnicity, or national origin</li>
+                    <li>Religion or religious beliefs</li>
+                    <li>Sexual orientation or gender identity</li>
+                    <li>Disability or medical condition</li>
+                    <li>Caste, age, or veteran status</li>
+                </ul>
+
+                <h3>No Harassment or Bullying</h3>
+                <p>Treat others with respect. Do not engage in:</p>
+                <ul>
+                    <li>Targeted harassment or cyberbullying</li>
+                    <li>Doxxing (sharing private information)</li>
+                    <li>Stalking or unwanted attention</li>
+                    <li>Impersonation</li>
+                </ul>
+
+                <h3>Sexual Content</h3>
+                <p>Sexually explicit content, nudity, and pornography are not allowed. This includes:</p>
+                <ul>
+                    <li>Nudity or sexually suggestive content</li>
+                    <li>Sexual acts or simulations</li>
+                    <li>Sexual solicitation</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Integrity -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Integrity & Authenticity</h2>
+            </div>
+            <div class="section-content">
+                <h3>Misinformation</h3>
+                <p>Do not spread false information that could cause harm, especially regarding:</p>
+                <ul>
+                    <li>Health and medical misinformation</li>
+                    <li>Elections and civic processes</li>
+                    <li>Manipulated media (deepfakes)</li>
+                </ul>
+
+                <h3>Spam & Fake Engagement</h3>
+                <p>Authentic engagement only. Do not:</p>
+                <ul>
+                    <li>Use bots or fake accounts</li>
+                    <li>Artificially inflate views, likes, or followers</li>
+                    <li>Post repetitive or misleading content</li>
+                    <li>Engage in follow-for-follow schemes</li>
+                </ul>
+
+                <h3>Scams & Fraud</h3>
+                <p>Fraudulent activities are strictly prohibited:</p>
+                <ul>
+                    <li>Phishing or identity theft</li>
+                    <li>Financial scams or pyramid schemes</li>
+                    <li>Sale of counterfeit goods</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Illegal Activity -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Illegal Activities</h2>
+            </div>
+            <div class="section-content">
+                <p>Do not use YAPPZY to promote or engage in illegal activities, including:</p>
+                <ul>
+                    <li>Sale or promotion of illegal drugs</li>
+                    <li>Sale of weapons or regulated goods</li>
+                    <li>Human trafficking</li>
+                    <li>Copyright or trademark infringement</li>
+                    <li>Gambling or unauthorized contests</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Intellectual Property</h2>
+            </div>
+            <div class="section-content">
+                <p>Respect others' intellectual property rights. Only post content you have the right to share.</p>
+                <p>If you believe content infringes your copyright, report it to <a
+                        href="mailto:copyright@yappzy.online">copyright@yappzy.online</a>.</p>
+                <div class="info-box">
+                    <strong>Tip:</strong> When using music, make sure it's from our licensed library or you have
+                    permission to use it.
+                </div>
+            </div>
+        </div>
+
+        <!-- Reporting -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Reporting Violations</h2>
+            </div>
+            <div class="section-content">
+                <p>If you see content that violates these guidelines:</p>
+                <ul>
+                    <li>Tap the "..." menu on any post</li>
+                    <li>Select "Report"</li>
+                    <li>Choose the reason for reporting</li>
+                    <li>Submit</li>
+                </ul>
+                <p>Our moderation team reviews all reports within 24 hours. You can also email us at <a
+                        href="mailto:support@yappzy.online">support@yappzy.online</a>.</p>
+                <p><strong>Emergency?</strong> If you see content involving immediate danger or illegal activity,
+                    contact local authorities immediately.</p>
+            </div>
+        </div>
+
+        <!-- Enforcement -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Enforcement</h2>
+            </div>
+            <div class="section-content">
+                <h3>How We Enforce</h3>
+                <p>We use a combination of AI-powered moderation and human review to enforce these guidelines.</p>
+
+                <h3>Consequences</h3>
+                <p>Depending on the severity and frequency of violations:</p>
+                <ul>
+                    <li><strong>Warning:</strong> For first-time minor violations</li>
+                    <li><strong>Content Removal:</strong> Violating content is removed</li>
+                    <li><strong>Temporary Suspension:</strong> Account access restricted for a period</li>
+                    <li><strong>Permanent Ban:</strong> Account permanently deactivated</li>
+                </ul>
+
+                <h3>Appeals</h3>
+                <p>If you believe we made a mistake, you can appeal to <a
+                        href="mailto:support@yappzy.online">support@yappzy.online</a>.</p>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-box">
+            <h2>Questions or Concerns?</h2>
+            <p class="subtitle">We're here to help keep our community safe</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <div class="contact-content">
+                        <div class="contact-label">Report Content</div>
+                        <p><a href="mailto:support@yappzy.online">support@yappzy.online</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                    </svg>
+                    <div class="contact-content">
+                        <div class="contact-label">Safety Concerns</div>
+                        <p><a href="mailto:support@yappzy.online">support@yappzy.online</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <div class="contact-content">
+                        <div class="contact-label">Company</div>
+                        <p>Tenzara (Yappzy)<br>West Bengal 721632, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="../terms-of-service/index.html">Terms of Service</a>
+            <a href="../privacy-policy/index.html">Privacy Policy</a>
+            <a href="index.html">Community Guidelines</a>
+            <a href="../help/index.html">Help</a>
+        </div>
+        <p class="copyright">© 2026 YAPPZY SOCIAL MEDIA</p>
+    </footer>
+</body>
+
+</html>
